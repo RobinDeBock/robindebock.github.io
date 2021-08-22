@@ -1,21 +1,4 @@
-:root {
-    --footer-height: 1.5em;
-}
-
-html {
-    overflow: hidden;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
+/* MAKE CHANGES TO CSS IN THIS FILE */
 h1 {
     color: white;
     text-align: center;
@@ -38,6 +21,24 @@ h1 {
     justify-content: center;
     align-self: center;
     padding-bottom: 2em;
+}
+
+.social-static {
+    display: inline-block;
+    margin: 0.35em;
+    margin-top: calc(-2em + 0.35em);
+    vertical-align: middle;
+    font-size: 4.8em;
+    box-shadow: 0px 0px 0.2em 0.05em rgba(0, 0, 0, 0.404);
+    border-radius: 50%;
+    line-height: 1em;
+    z-index: 500;
+}
+
+.social-static.profile-picture {
+    width: 2em;
+    height: 2em;
+    color: white;
 }
 
 .social-button {
@@ -72,6 +73,14 @@ h1 {
     background-color: #f56040;
 }
 
+.social-button.facebook {
+    background-color: #3C5A99;
+}
+
+.social-button.twitter {
+    background-color: #1DA1F2;
+}
+
 .social-button.email {
     background-color: rgb(35, 229, 255);
 }
@@ -80,6 +89,7 @@ h1 {
     background-color: rgb(187, 177, 43);
 }
 
+.social-static-wrapper, 
 .social-button-wrapper {
     display: inline-block;
 }
@@ -136,6 +146,7 @@ h1 {
     h1 {
         font-size: 2.5em;
     }
+    .social-static, 
     .social-button {
         font-size: 4em;
     }
@@ -151,8 +162,15 @@ h1 {
     h1 {
         font-size: 2.5em;
     }
+    .social-static-wrapper, 
     .social-button-wrapper {
         display: block;
+    }
+    .social-static {
+        margin: 0.5em 0.5em 0em 0.5em;
+        font-size: 4.5em;
+        width: 1.8em;
+        height: 1.8em;
     }
     .social-button {
         margin: 0.5em auto;
